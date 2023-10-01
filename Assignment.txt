@@ -1,0 +1,387 @@
+DATA TYPES :
+
+Q1)Declare a variable of type int and assign it the value 42.
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int a;
+	    a=42;
+		System.out.println("The value of integer a is :" + a);
+	}
+}
+
+Q2)Declare a variable of type double and assign it the value 3.14159.
+
+public class Main
+{
+	public static void main(String[] args) {
+	    double b;
+	    b=3.14159;
+		System.out.println("The value of double b is :" + b);
+	}
+}
+
+Q3)Declare a variable of type char and assign it the character 'A'.
+
+public class Main
+{
+	public static void main(String[] args) {
+	    char x;
+	    x='A';
+		System.out.println("The value of character x is :" + x);
+	}
+}
+
+
+Q4)Declare a variable of type boolean and assign it the value true.
+
+public class Main
+{
+	public static void main(String[] args) {
+	    boolean y;
+	    y =true;
+		System.out.println("The value of boolean y is :" + y);
+	}
+}
+
+Q5)Declare a variable of type String and assign it the text "Hello, World!".
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String c;
+	    c ="Hello World !";
+		System.out.println("The value of String c is :" + c);
+	}
+}
+
+
+Arithmetic Operators:
+
+Write code to add two integers and print the result.
+
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner =new Scanner(System.in);
+	    
+		System.out.println("Enter value of a : ");
+		int a=scanner.nextInt();
+		
+		System.out.println("Enter value of b : ");
+		int b=scanner.nextInt();
+		
+		int c=a+b;
+		System.out.println("The addition of a & b is : "+c);
+	}
+}
+
+
+Write code to subtract one integer from another and print the result.
+
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner =new Scanner(System.in);
+	    
+		System.out.println("Enter value of a : ");
+		int a=scanner.nextInt();
+		
+		System.out.println("Enter value of b : ");
+		int b=scanner.nextInt();
+		
+		int c=a-b;
+		System.out.println("The substraction of a & b is : "+c);
+	}
+}
+
+
+Write code to multiply two integers and print the result.
+
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner =new Scanner(System.in);
+	    
+		System.out.println("Enter value of a : ");
+		int a=scanner.nextInt();
+		
+		System.out.println("Enter value of b : ");
+		int b=scanner.nextInt();
+		
+		int c=a*b;
+		System.out.println("The multiplication of a & b is : "+c);
+	}
+}
+
+Write code to divide one integer by another and print the result.
+
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner =new Scanner(System.in);
+	    
+		System.out.println("Enter value of a : ");
+		int a=scanner.nextInt();
+		
+		System.out.println("Enter value of b : ");
+		int b=scanner.nextInt();
+		
+		int c=a/b;
+		System.out.println("The division of a & b is : "+c);
+	}
+}
+                                                                                                                                            
+
+Write code to find the remainder when dividing one integer by another and print the result.
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner= new Scanner(System.in);
+	    
+		System.out.println("Enter the Number :");
+		double x=scanner.nextDouble();
+		
+		System.out.println("Enter the Number :");
+		double y=scanner.nextDouble();
+		
+		double z=x/y;
+		System.out.println("The division of x & y is : " + z);
+		
+		double a=x%y;
+		System.out.println("The remainder of x & y is : " + a);
+	}
+}
+
+
+Variables:
+
+
+Create two integer variables, x and y, and swap their values without using a temporary variable.
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner= new Scanner(System.in);
+	    
+		int x=15;
+		int y=10;
+		
+		x=x+y;
+		System.out.println("The value of x is : "+x);
+		
+		y=x-y;
+		System.out.println("The value of y is : "+y);
+		
+		x=x-y;
+		System.out.println("The value of x is : "+x);
+		
+	}
+}
+
+Calculate the area of a rectangle using variables length and width, and print the result.
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner= new Scanner(System.in);
+	    
+		System.out.println("Enter the length of Rectangle : ");
+		int length=scanner.nextInt();
+		
+		System.out.println("Enter the width of Rectangle : ");
+		int width=scanner.nextInt();
+		
+	    int area=length*width;
+		System.out.println("The area of rectangle is : "+area);
+		
+	}
+}
+
+Write code to increment an integer variable count by 1.
+
+public class Main{
+    public static void main (String[] args) {
+        int x;
+        x=10;
+        x=x+1;
+        System.out.println("the value of x is : "+x);
+    }
+}
+
+Declare a constant variable PI with a value of 3.14159.
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    double pi;
+	    pi=3.14159;
+	    System.out.println("The value of pi is  : "+pi);
+	
+	}
+}
+
+
+Calculate the simple interest using variables principal, rate, and time, and print the result.
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner=new Scanner(System.in);
+	    
+		System.out.println("Enter the principal : ");
+		double principal=scanner.nextDouble();
+		
+		System.out.println("Enter the rate : ");
+		double rate=scanner.nextDouble();
+		
+		System.out.println("Enter time : ");
+		double time=scanner.nextDouble();
+		
+		double SI=principal*rate*time/100;
+		System.out.println("The simple interest is  : "+SI);
+	
+	}
+}
+
+Mixed Questions:
+
+Calculate the area of a circle using the formula area = PI * radius * radius.
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner= new Scanner(System.in);
+	    
+	    double PI=3.14159;
+	    
+		System.out.println("Enter the radius of Circle : ");
+		double radius=scanner.nextDouble();
+		
+	    double area=PI*radius*radius;
+		System.out.println("The area of circle is : "+area);
+		
+	}
+}
+
+Calculate the hypotenuse of a right triangle using the Pythagorean theorem.
+
+public class Main
+{
+	public static void main(String[] args) {
+	   double side1=3.0;
+	   double side2=4.0;
+	   double hypotenous=Math.sqrt(side1*side1+side2*side2);
+	   System.out.println(hypotenous);
+	}
+}
+
+Convert a temperature in Celsius to Fahrenheit using the formula F = (C * 9/5) + 32.
+
+public class Main
+{
+	public static void main(String[] args) {
+	    double celsius =90.00;
+	    double fahreneit = (celsius * 9/5) + 32;
+		System.out.println(celsius + "C is equal to " +fahreneit + "F");
+	}
+}
+
+
+Calculate the average of three numbers and print the result.
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner =new Scanner(System.in);
+	    
+		int a=10;
+		int b=9;
+		int c=15;
+		
+		int d=a+b+c/3;
+		System.out.println("The average of three numbers is : "+d);
+	}
+}
+
+Find the maximum of two integers and print the result.
+
+public class Main
+{
+	public static void main(String[] args) {
+
+		int a=50;
+		int b=25;
+
+		System.out.println(Math.max(a,b));
+	}
+}
+
+Check if a given number is even or odd and print the result.
+
+import java.util.Scanner;
+   public class Main{
+       public static void main (String[] args) {
+           Scanner scanner = new Scanner(System.in);
+           
+           System.out.println("Enter the number : ");
+           int number=scanner.nextInt();
+           
+           if(number%2==0){
+               System.out.println("Even number");
+           }else{
+               System.out.println("Odd number");
+           }
+       }
+   }
+
+
+Convert a character to its ASCII value and print it.
+
+   public class Main{
+       public static void main (String[] args) {
+           char x='A';
+           int asciivalue=(int)x;
+           System.out.println("Asciivalue value of : " + x + " is " + asciivalue );
+       }
+   }
+
+
+Concatenate two strings and print the result. 
+
+ import java.util.Scanner;
+   public class Main{
+       public static void main (String[] args) {
+           String str1="Hello ";
+           String str2="Moon! ";
+           String result=str1+str2;
+           System.out.println(result);
+       }
+   }
