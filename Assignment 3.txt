@@ -1,0 +1,522 @@
+//Write a Java program to print the numbers from 1 to 50 using a while loop.
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		int i=1;
+		while(i<=50){
+		    System.out.print(i + " ");
+		    i++;
+		}
+	}
+}
+
+
+//Write a Java program to calculate and display the sum of the first 50 natural numbers using a while loop.
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		int i=1;
+		int sum=0;
+		while(i<=50){
+		    sum=sum+i;
+		    i++;
+		}
+		System.out.print("The sum of the first 50 natural numbers are : " + sum );
+		    
+	}
+}
+
+//Write a Java program to print the multiplication table of a given number using a while loop.
+
+
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main (String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.print("Enter the number : ");
+        int num=scan.nextInt();
+        
+        int multiplier = 1;
+        
+        System.out.println("Multiplication table of " + num + " is : ");
+        while(multiplier<=10){
+            int result=num*multiplier;
+            System.out.println(num + " * " + multiplier + " = " + result);
+            multiplier++;
+        }
+        
+    }
+}
+
+//Write a Java program to calculate and display the factorial of a given number using a while loop.
+
+
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main (String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.print("Enter the number : ");
+        int num=scan.nextInt();
+        
+        int i = 1;
+        int fact = 1;
+        
+        while(i<=num){
+            fact=fact*i;
+            i++;
+            }
+        System.out.println("The factorial of a given number is : "+fact);
+            
+        
+    }
+}
+
+//Write a Java program to display the Fibonacci series up to the nth term using a while loop.
+
+
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main (String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.print("Enter the number to display the Fibonacci series up to the nth term : ");
+        int num=scan.nextInt();
+        
+        int firstterm=0;
+        int i = 1;
+        int secondterm =firstterm + 1;
+        
+        while(i<=num){
+            System.out.print(firstterm + " ");
+            int nextterm=firstterm+secondterm;
+            firstterm=secondterm;
+            secondterm=nextterm;
+            i++;
+        }
+    }
+}
+
+//Write a Java program to check if a given number is prime or not using a while loop.
+
+
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main (String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.print("Enter the number to check if a given number is prime or not : ");
+        int num=scan.nextInt();
+        
+        boolean isPrime=true;
+        
+        int i = 2;
+             
+        if(num<=1){
+            System.out.print(num+" is not a prime number");
+        }else{
+            while(i<=num/2){
+                if(num%i==0){
+                    isPrime=false;
+                    break;
+                }
+                i++;
+            }
+        }
+        if(isPrime){
+            System.out.println(num + " is a prime number");
+        }else{
+            System.out.println(num + " is not a prime number");
+        }
+    }
+}
+
+//Write a Java program to find and print the prime numbers between 1 and 100 using a while loop. 
+
+public class Main 
+{
+    public static void main (String[] args) {
+    
+       System.out.println("Prime numbers from 1 to 100 are : ");
+       
+       int i=1;
+     
+       boolean isPrime=true;
+       
+       while(i<=100){
+           if(i%2==0){
+               isPrime=false;
+           }else{
+               System.out.print(i + " ");
+           }
+           i++;
+       }
+    }
+}
+
+//Write a Java program to reverse a given number using a while loop.
+
+
+import java.util.Scanner;
+
+public class Main 
+{
+    public static void main (String[] args) {
+        Scanner scan=new Scanner(System.in);
+        
+        System.out.print("Enter the number : ");
+        int num=scan.nextInt();
+        
+        int reverse=0;
+        
+        while(num!=0){
+            int digit=num%10;
+            reverse=reverse*10+digit;
+            num=num/10;
+        }
+        System.out.println("Reversed number is : " +reverse);
+    }
+}
+
+//Write a Java program to calculate and display the sum of the digits of a given number using a while loop.
+
+
+import java.util.Scanner;
+
+public class Main 
+{
+    public static void main (String[] args) {
+        Scanner scan=new Scanner(System.in);
+        
+        System.out.print("Enter the number : ");
+        int num=scan.nextInt();
+        
+        int digit=0;
+        int sum=0;
+        
+        while(num>0){
+            digit=num%10;
+            sum=sum+num;
+            num=num/10;
+        }
+        System.out.println("The sum of a given number is : " +sum);
+    }
+}
+
+//Write a Java program to find the number of digits in a given number using a while loop.
+
+
+import java.util.Scanner;
+
+public class Main 
+{
+    public static void main (String[] args) {
+        Scanner scan=new Scanner(System.in);
+        
+        System.out.print("Enter the number : ");
+        int num=scan.nextInt();
+        
+        int count=0;
+        
+        while(num!=0){
+            num=num/10;
+            count++;
+        }
+        System.out.println("Number of digits is : " +count);
+    }
+}
+
+//Write a Java program to generate and print the first 10 even numbers using a while loop.
+
+
+public class Main 
+{
+    public static void main (String[] args) {
+        
+        int i=2;
+        
+        while(i<=20){
+            if(i%2==0){
+               System.out.print(i+ " ");
+            }
+            i++;
+        }
+        
+    }
+}
+
+//Write a Java program to generate and print the first 10 odd numbers using a while loop.
+
+
+public class Main 
+{
+    public static void main (String[] args) {
+        
+        int i=2;
+        
+        while(i<=21){
+            if(i%2==0){
+              
+            }else{
+                System.out.print(i+ " ");
+            }
+            i++;
+        }
+        
+    }
+}
+
+//Write a Java program to calculate and print the average of a list of numbers entered by the user using a while loop.
+
+import java.util.Scanner;
+
+public class Main 
+{
+    public static void main (String[] args) {
+        Scanner scan=new Scanner(System.in);
+        
+        System.out.print("Enter the number of elements : ");
+        double num=scan.nextDouble();
+        
+        if(num<=0){
+            System.out.println("Please enter a positive number");
+            return;
+        }
+        
+        double sum=0;
+        double count=0;
+        double average;
+        
+        System.out.println("Enter " + (int)num + " number to calculate average : ");
+        
+        while(count<num){
+            double number=scan.nextDouble();
+            sum=sum+number;
+            count++;
+        }
+        average=sum/num;
+        
+        System.out.println("The average is : " + average);
+    }
+}
+
+//Write a Java program to find the reverse of a given number and check if it is a palindrome using a while loop.
+
+import java.util.Scanner;
+
+public class Main 
+{
+    public static void main (String[] args) {
+        Scanner scan=new Scanner(System.in);
+        
+        System.out.print("Enter the number : ");
+        int num=scan.nextInt();
+        
+        int originalnumber=num;
+        int reverse=0;
+        
+        while(num!=0){
+            int digit=num%10;
+            reverse=reverse*10 + digit;
+            num=num/10;
+        }
+        System.out.println("The reverse number is  : " +reverse);
+
+        if(originalnumber==reverse){
+            System.out.println(originalnumber + " is a palindrome number");
+        }else{
+            System.out.println(originalnumber + " is not a palindrome number");
+        }
+    }
+}
+
+//Write a Java program to calculate and display the sum of the series 1 - 2 + 3 - 4 + ... + n using a while loop.
+
+import java.util.Scanner;
+
+public class Main 
+{
+    public static void main (String[] args) {
+        Scanner scan=new Scanner(System.in);
+        
+        System.out.print("Enter the nth term : ");
+        int n=scan.nextInt();
+        
+        int sum=0;
+        int i=1;
+        
+        if(n<=0){
+            System.out.println("Please enter a positive integer for n");
+            return;
+        }
+        
+        while(i<=n){
+            if(i%2==0){
+                sum=sum-i;
+            }else{
+                sum= sum+i;
+            }
+            i++;
+        }
+        System.out.println("The sum of the series 1 - 2 + 3 - 4 + ... + " + n + " is : "+sum);  
+        
+    }
+}
+
+//Write a Java program to calculate and print the squares of numbers from 1 to 10 using a while loop.
+
+public class Main 
+{
+    public static void main (String[] args) {
+
+        int i=1;
+        
+        while(i<=10){
+            int square=i*i;
+            System.out.println("squares of " + i + " is : " +square);  
+            i++;
+        }
+    }
+}
+
+//Write a Java program to find and print the factors of a given number using a while loop.
+
+import java.util.Scanner;
+
+public class Main 
+{
+    public static void main (String[] args) {
+        Scanner scan=new Scanner(System.in);
+        
+        System.out.print("Enter the number : ");
+        int num=scan.nextInt();
+        
+        int i=1;
+        if(num<=0){
+            System.out.println("Please enter a positive integer");
+            return;
+        }
+        
+        System.out.println("The factors of  " + num + " are: ");
+        
+        while(i<=num){
+            if(num%i==0){
+                System.out.println(i);
+            }
+            i++;
+        }
+    }
+}
+
+//Write a Java program to calculate and display the sum of the even numbers between 1 and 100 using a while loop.
+
+public class Main 
+{
+    public static void main (String[] args) {
+        
+        int i=1;
+        int sum=0;
+        
+        while(i<=100){
+            if(i%2==0){
+                sum=sum+i;
+            }
+            i++;
+        }
+        System.out.println("The sum of the even numbers between 1 and 100 is : " +sum);
+    }
+}
+
+//Write a Java program to calculate and display the product of the odd numbers between 1 and 50 using a while loop.
+
+public class Main 
+{
+    public static void main (String[] args) {
+       
+        int i=1;
+        int product=0;
+        
+        while(i<=50){
+            if(i%2 !=0){
+                product=product+i;
+            }
+            i++;
+        }
+        System.out.println("The product of the odd numbers between 1 and 50 is : " +product);
+    }
+}
+
+//Write a Java program to print the ASCII values of lowercase alphabets using a while loop.
+
+public class Main 
+{
+    public static void main (String[] args) {
+        
+        char mychar='a';
+        
+        while(mychar<='z'){
+            int asciivalue=(int)mychar;
+            
+            System.out.println("The ASCII value of "+ mychar + " is : "+ asciivalue);
+            mychar++;
+        }
+    }
+}
+
+//Write a Java program to calculate and display the product of the digits of a given number using a while loop.
+
+import java.util.Scanner;
+
+public class Main 
+{
+    public static void main (String[] args) {
+        Scanner scan = new Scanner(System.in);
+         
+        System.out.print("Enter the number : ");
+        int num=scan.nextInt();
+        
+        int product=1;
+        int temp=num;
+        
+        while(num>0){
+            int digit=num%10;
+            product=product*digit;
+            num=num/10;
+        }
+        System.out.println("The product of the digits is : "+product);
+    }
+}
+
+//Write a Java program to print the squares of even numbers between 1 and 20 using a while loop.
+
+public class Main 
+{
+    public static void main (String[] args) {
+        
+        int number=2;
+        int square=0;
+        
+        System.out.println("The squares of even numbers between 1 and 20 is : ");
+        
+        while(number<=20){
+            if(number%2==0){
+               square=number*number;
+               System.out.println("Square of " + number + " is : " + square);
+            }
+            number++;
+        }
+    }
+}
